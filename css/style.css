@@ -1,0 +1,22 @@
+:root{
+    /* Tema claro*/
+    --color-primary: ;
+    --color-secondary: ;
+    --color-text: ;
+    --color-background:
+}
+{data-theme="dark"} {
+    /* Tema oscuro*/
+    --color-primary: #172815;
+    --color-secondary: #5a9367;
+    --color-text: #F7F7F7;
+    --color-background: #181918
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:
+}
