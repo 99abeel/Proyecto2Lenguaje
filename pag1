@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdfasdfdas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="g" alt="Logo" class="logo">
+        <input type="text" placeholder="Buscar..." class="search">
+        <nav>
+            <ul>
+                <li><a href="#" class="icon"><img src="imagenes/modo-oscuro.png"></a></li>
+                <li><a href="#" class="icon"><img src="imagenes/casa.png"></a></li>
+                <li><a href="#" class="icon"><img src="imagenes/carrito-de-compras.png"></a></li>
+                <li><a href="#" class="icon"><img src="imagenes/usuario.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
