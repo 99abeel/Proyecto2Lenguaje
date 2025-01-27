@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Mangas - Inicio</title>
 </head>
@@ -19,7 +20,11 @@
 
 <section id="quienes-somos">
   <h2>Quiénes Somos</h2>
-  <p>En MundoManga somos apasionados por el mundo del manga. Desde los clásicos hasta las novedades más recientes, nos dedicamos a ofrecer a nuestros clientes una experiencia única, con una amplia selección de títulos y un ambiente donde los fanáticos del manga pueden sentirse en casa.</p>
+  <figure>
+    Aquí va la imagen
+    <figcaption>Imagen representativa</figcaption>
+  </figure>
+  <p>En <strong>MangaWorld</strong>, somos apasionados por el mundo del manga. Desde los clásicos hasta las novedades más recientes...</p>
 </section>
 
 <section id="localizacion">
@@ -47,3 +52,4 @@
 </footer>
 </body>
 </html>
+
