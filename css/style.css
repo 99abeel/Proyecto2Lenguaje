@@ -1,22 +1,262 @@
-:root{
-    /* Tema claro*/
-    --color-primary: ;
-    --color-secondary: ;
-    --color-text: ;
-    --color-background:
-}
-{data-theme="dark"} {
-    /* Tema oscuro*/
-    --color-primary: #172815;
-    --color-secondary: #5a9367;
-    --color-text: #F7F7F7;
-    --color-background: #181918
-}
-
-
-*{
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc400;
+    justify-content: space-between;
+}
+
+nav li{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+nav ul{
+    height: 130px;
+    width: 130px;
+    display: flex;
+}
+nav img{
+    width: 130%;
+}
+
+.icon{
+    font-size: 4.8rem;
+}
+.logo {
+    width: 8%;
+    margin-right: 10%;
+}
+
+.search {
+    width: 25%;
+    padding: 0.5%;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.banner img {
+    width: 10%;
+    height: 20px;
+    object-fit: cover;
+}
+main.reseñas{
+    /* Formulario */
+    form {
+        background: #fff;
+        margin: 2rem auto;
+        padding: 2rem;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #444;
+    }
+
+    /* Etiquetas */
+    form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    /* Campos de entrada */
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+        padding: 0.7rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    form input[type="radio"],
+    form input[type="checkbox"] {
+        width: auto;
+        margin-right: 0.5rem;
+    }
+
+    form textarea {
+        height: 120px;
+        resize: vertical;
+    }
+
+    /* Botón de enviar */
+    form button {
+        display: block;
+        width: 100%;
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    form button:hover {
+        background: #555;
+    }
+
+    /* Mensaje de nota opcional */
+    form p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+----
+    /* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Navegación */
+nav {
+    background: #444;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: #333;
+}
+
+/* Marcadores de imágenes usando figure */
+figure {
+    margin: 1rem 0;
+    background: #ddd;
+    color: #777;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1rem;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #403e39;
+    color: #fff;
+}
+
+footer address {
+    text-align: right;
+}
+
+footer address a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+footer img {
+    width: 12%;
+    margin-right: 10%;
 }

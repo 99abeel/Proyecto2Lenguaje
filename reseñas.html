@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reseñas</title>
+</head>
+<body>
+<header>
+    <img src="g" alt="Logo" class="logo">
+    <input type="text" placeholder="Buscar..." class="search">
+    <nav>
+        <ul>
+            <li><a href="#" class="icon"><img src="imagenes/casa.png"></a></li>
+            <li><a href="#" class="icon"><img src="imagenes/carrito-de-compras.png"></a></li>
+            <li><a href="#" class="icon"><img src="imagenes/usuario.png"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="reseñas">
+<section id="formulario-resenas">
+    <h2>Formulario de Reseñas</h2>
+    <form action="/resenas" method="post">
+        <label for="nombre-manga">Nombre del Manga:</label>
+        <input type="text" id="nombre-manga" name="nombre-manga" required>
+        <br><br>
+
+        <label for="calificacion">Calificación (1 a 5):</label>
+        <input type="number" id="calificacion" name="calificacion" min="1" max="5" required>
+        <br><br>
+
+        <label for="opinion">Tu Opinión:</label>
+        <textarea id="opinion" name="opinion" rows="5" cols="40" placeholder="Escribe tu reseña aquí..." required></textarea>
+        <br><br>
+
+        <label for="recomendarias">¿Recomendarías este manga a otros?</label>
+        <input type="radio" id="recomendarias-si" name="recomendarias" value="si" required>
+        <label for="recomendarias-si">Sí</label>
+        <input type="radio" id="recomendarias-no" name="recomendarias" value="no">
+        <label for="recomendarias-no">No</label>
+        <br><br>
+
+        <label for="apodo">Tu Apodo (opcional):</label>
+        <input type="text" id="apodo" name="apodo">
+        <br><br>
+
+        <button type="submit">Enviar Reseña</button>
+    </form>
+</section>
+</main>
+
+<footer>
+    <img src="imagenes/logo/logo_sinfondo.png" alt="Logo del pie">
+    <address>
+        <p>📧 zapatudoshop@gmail.com</p>
+        <p>📍 C/ Alameda Solano 7</p>
+        <p>📞 644 84 23 93</p>
+        <a href="#">soporte y servicio al cliente</a>
+    </address>
+</footer>
+</body>
+</html>
